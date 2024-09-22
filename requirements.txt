@@ -1,6 +1,5 @@
-numpy==2.1.1
-pandas==2.2.2
-Pillow==10.4.0
-streamlit==1.38.0
-tensorflow==2.17.0
-tensorflow_intel==2.17.0
+pip install numpy==2.1.1
+pip install pandas==2.2.2
+pip install Pillow==10.4.0
+pip install streamlit==1.38.0
+pip install tensorflow==2.17.0
