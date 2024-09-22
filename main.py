@@ -70,6 +70,167 @@ def apply_custom_css():
 # Apply Custom CSS
 apply_custom_css()
 
+# Calorie information for each food label
+calorie_info = {
+    "Baked Prawns With Vermicelli": {
+        "100g": "250-300 kcal",
+        "250g": "625-750 kcal",
+        "500g": "1250-1500 kcal",
+        "1kg": "2500-3000 kcal"
+    },
+    "Banana in Coconut Milk": {
+        "100g": "200-250 kcal",
+        "250g": "500-625 kcal",
+        "500g": "1000-1250 kcal",
+        "1kg": "2000-2500 kcal"
+    },
+    "Chicken Green Curry": {
+        "100g": "400-500 kcal",
+        "250g": "1000-1250 kcal",
+        "500g": "2000-2500 kcal",
+        "1kg": "4000-5000 kcal"
+    },
+    "Chicken Mussaman Curry": {
+        "100g": "450-550 kcal",
+        "250g": "1125-1375 kcal",
+        "500g": "2250-2750 kcal",
+        "1kg": "4500-5500 kcal"
+    },
+    "Coconut Rice Pancake": {
+        "100g": "250-300 kcal",
+        "250g": "625-750 kcal",
+        "500g": "1250-1500 kcal",
+        "1kg": "2500-3000 kcal"
+    },
+    "Curried Noodle Soup with Chicken": {
+        "100g": "350-400 kcal",
+        "250g": "875-1000 kcal",
+        "500g": "1750-2000 kcal",
+        "1kg": "3500-4000 kcal"
+    },
+    "Egg and Pork in Sweet Brown Sauce": {
+        "100g": "300-350 kcal",
+        "250g": "750-875 kcal",
+        "500g": "1500-1750 kcal",
+        "1kg": "3000-3500 kcal"
+    },
+    "Egg with Tamarind Sauce": {
+        "100g": "250-300 kcal",
+        "250g": "625-750 kcal",
+        "500g": "1250-1500 kcal",
+        "1kg": "2500-3000 kcal"
+    },
+    "Fried Cabbage with Fish Sauce": {
+        "100g": "150-200 kcal",
+        "250g": "375-500 kcal",
+        "500g": "750-1000 kcal",
+        "1kg": "1500-2000 kcal"
+    },
+    "Fried Egg": {
+        "100g": "200-250 kcal",
+        "250g": "500-625 kcal",
+        "500g": "1000-1250 kcal",
+        "1kg": "2000-2500 kcal"
+    },
+    "Fried Rice": {
+        "100g": "350-450 kcal",
+        "250g": "875-1125 kcal",
+        "500g": "1750-2250 kcal",
+        "1kg": "3500-4500 kcal"
+    },
+    "Grilled River Prawn": {
+        "100g": "200-250 kcal",
+        "250g": "500-625 kcal",
+        "500g": "1000-1250 kcal",
+        "1kg": "2000-2500 kcal"
+    },
+    "Mango Sticky Rice": {
+        "100g": "300-350 kcal",
+        "250g": "750-875 kcal",
+        "500g": "1500-1750 kcal",
+        "1kg": "3000-3500 kcal"
+    },
+    "Omelet": {
+        "100g": "200-250 kcal",
+        "250g": "500-625 kcal",
+        "500g": "1000-1250 kcal",
+        "1kg": "2000-2500 kcal"
+    },
+    "Pork Chopped Tofu Soup": {
+        "100g": "150-200 kcal",
+        "250g": "375-500 kcal",
+        "500g": "750-1000 kcal",
+        "1kg": "1500-2000 kcal"
+    },
+    "Pork Curry With Morning Glory": {
+        "100g": "300-400 kcal",
+        "250g": "750-1000 kcal",
+        "500g": "1500-2000 kcal",
+        "1kg": "3000-4000 kcal"
+    },
+    "Shrimp Fried Rice": {
+        "100g": "350-450 kcal",
+        "250g": "875-1125 kcal",
+        "500g": "1750-2250 kcal",
+        "1kg": "3500-4500 kcal"
+    },
+    "Shrimp Paste Fried Rice": {
+        "100g": "350-450 kcal",
+        "250g": "875-1125 kcal",
+        "500g": "1750-2250 kcal",
+        "1kg": "3500-4500 kcal"
+    },
+    "Sour Soup": {
+        "100g": "100-150 kcal",
+        "250g": "250-375 kcal",
+        "500g": "500-750 kcal",
+        "1kg": "1000-1500 kcal"
+    },
+    "Spicy Mixed Vegetable Soup": {
+        "100g": "100-150 kcal",
+        "250g": "250-375 kcal",
+        "500g": "500-750 kcal",
+        "1kg": "1000-1500 kcal"
+    },
+    "Steamed Capon in Flavored Rice": {
+        "100g": "300-350 kcal",
+        "250g": "750-875 kcal",
+        "500g": "1500-1750 kcal",
+        "1kg": "3000-3500 kcal"
+    },
+    "Stir Fried Chicken with Chestnuts": {
+        "100g": "350-400 kcal",
+        "250g": "875-1000 kcal",
+        "500g": "1750-2000 kcal",
+        "1kg": "3500-4000 kcal"
+    },
+    "Stir Fried Rice Noodles with Chicken": {
+        "100g": "400-500 kcal",
+        "250g": "1000-1250 kcal",
+        "500g": "2000-2500 kcal",
+        "1kg": "4000-5000 kcal"
+    },
+    "Stuffed Bitter Gourd Broth": {
+        "100g": "150-200 kcal",
+        "250g": "375-500 kcal",
+        "500g": "750-1000 kcal",
+        "1kg": "1500-2000 kcal"
+    },
+    "Thai Chicken Biryani": {
+        "100g": "400-450 kcal",
+        "250g": "1000-1125 kcal",
+        "500g": "2000-2250 kcal",
+        "1kg": "4000-4500 kcal"
+    },
+    "Thai Pork Leg Stew": {
+        "100g": "350-400 kcal",
+        "250g": "875-1000 kcal",
+        "500g": "1750-2000 kcal",
+        "1kg": "3500-4000 kcal"
+    }
+}
+
+
 # Sidebar
 with st.sidebar:
     st.image("Thaifood_banner.jpg", use_column_width=True)  # Logo image
@@ -133,7 +294,13 @@ elif app_mode == "Prediction":
                 
                 # Get the index of the highest prediction
                 result_index = np.argmax(predictions)
-                st.success(f"The model predicts this is: **{labels[result_index]}**")
+                predicted_label = labels[result_index]
+                
+                # Get calorie info for the predicted label
+                calories = calorie_info.get(predicted_label, "N/A")
+                
+                st.success(f"The model predicts this is: **{predicted_label}**")
+                st.info(f"Estimated calories: **{calories} kcal**")
                 
                 # Confidence Bar Chart
                 st.write("Confidence Levels:")
