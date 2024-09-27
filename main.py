@@ -5,7 +5,7 @@ import numpy as np
 # Load the model only once
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("trained_model.h5")
+    return tf.keras.models.load_model("trained_model2.h5")
 
 # TensorFlow Model Prediction
 def model_prediction(test_image, model):
@@ -42,8 +42,27 @@ calorie_info = {
     "Stir Fried Rice Noodles with Chicken": 170,
     "Stuffed Bitter Gourd Broth": 80,
     "Thai Chicken Biryani": 200,
-    "Thai Pork Leg Stew": 250
+    "Thai Pork Leg Stew": 250,
+    "Stir-Fried Chinese Morning Glory": 40,
+    "Fried noodle Thai style with prawns": 190,
+    "Stir fried Thai basil with minced pork": 220,
+    "Fried Noodle in Soy Sauce": 180,
+    "Stir-fried Pumpkin with Eggs": 100,
+    "Stir-Fried Eggplant with Soybean Paste Sauce": 140,
+    "Stir Fried Clams with Roasted Chili Paste": 120,
+    "Golden Egg Yolk Threads": 130,
+    "Chicken Penang": 160,
+    "Thai Wing Beans Salad": 80,
+    "Spicy Glass Noodle Salad": 140,
+    "Spicy minced pork salad": 160,
+    "Egg custard in pumpkin": 200,
+    "Tapioca Balls with Pork Filling": 210,
+    "Green Papaya Salad": 60,
+    "Thai-Style Grilled Pork Skewers": 170,
+    "Pork Satay with Peanut Sauce": 180,
+    "Steamed Fish with Curry Paste": 130
 }
+
 
 # Sidebar
 st.sidebar.title("Dashboard")
