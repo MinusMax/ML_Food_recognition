@@ -63,6 +63,9 @@ calorie_info = {
     "Steamed Fish with Curry Paste": 130
 }
 
+# Function to clean and match predicted food name with dictionary keys
+def clean_food_item(food_item):
+    return food_item.strip().replace("'", "").strip(",")  # Remove extra characters
 
 # Sidebar
 st.sidebar.title("Dashboard")
@@ -139,16 +142,23 @@ elif app_mode == "Calorie Calculation":
     st.header("Calorie Calculation")
     if 'prediction_result' in st.session_state and 'test_image' in st.session_state:
         st.image(st.session_state.test_image, width=400, use_column_width=True)
-        st.write("Predicted Food Item: {}".format(st.session_state.prediction_result))
+        st.write(f"Predicted Food Item: {st.session_state.prediction_result}")
 
-        # Get the calorie information for the predicted food item
-        food_item = st.session_state.prediction_result
-        calorie_per_100g = calorie_info.get(food_item, 0)
+        # Clean up the predicted food item
+        food_item = clean_food_item(st.session_state.prediction_result)
+        st.write(f"DEBUG: Cleaned Food Item is '{food_item}'")
 
-        weight = st.number_input("Enter weight in grams:", min_value=1, max_value=5000, value=100)
-        calories = (weight / 100) * calorie_per_100g  # Calculate calories
+        # Get the calorie information for the cleaned food item
+        calorie_per_100g = calorie_info.get(food_item, None)
 
-        st.write(f"Calories for {weight}g: {calories:.2f}")
-        st.success("Calculated Calories: {} calories".format(calories))
+        if calorie_per_100g is not None:
+            weight = st.number_input("Enter weight in grams:", min_value=1, max_value=5000, value=100)
+            calories = (weight / 100) * calorie_per_100g  # Calculate calories
+
+            st.write(f"Calories for {weight}g: {calories:.2f}")
+            st.success(f"Calculated Calories: {calories:.2f} calories")
+        else:
+            # If the cleaned food item is not in the dictionary
+            st.error(f"No calorie information found for '{food_item}'. Please update the calorie information dictionary.")
     else:
         st.warning("Please go to the Prediction page first and make a prediction.")
