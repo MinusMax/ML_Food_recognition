@@ -1,48 +1,48 @@
-Chicken Green Curry
-Pork Curry with Morning Glory
-Spicy mixed vegetable soup
-Pork Chopped Tofu Soup
-Stuffed Bitter Gourd Broth
-Chicken Mussaman Curry
-Sour Soup
-Stir Fried Chicken with Chestnuts
-Omelet
-Fried egg
-Egg and Pork in Sweet Brown Sauce
-Egg with Tamarind Sauce
-Banana in coconut milk
-Stir Fried Rice Noodles with Chicken
-Fried Cabbage with Fish Sauce
-Grilled River Prawn
-Baked Prawns With Vermicelli
-Coconut rice pancake
-Mango Sticky Rice
-Thai Pork Leg Stew
-Shrimp Paste Fried Rice
-Curried Noodle Soup with Chicken
-Fried rice
-Shrimp Fried Rice
-Steamed capon in flavored rice
-Thai Chicken Biryani
-Thai Chicken Coconut Soup
-River prawn spicy soup
-Fried fish-paste balls
-Deep fried spring roll
-Stir-Fried Chinese Morning Glory
-Fried noodle Thai style with prawns
-Stir fried Thai basil with minced pork
-Fried Noodle in Soy Sauce
-Stir-fried Pumpkin with Eggs
-Stir-Fried Eggplant with Soybean Paste Sauce
-Stir Fried Clams with Roasted Chili Paste
-Golden Egg Yolk Threads
-Chicken Penang
-Thai Wing Beans Salad
-Spicy Glass Noodle Salad
-Spicy minced pork salad
-Egg custard in pumpkin
-Tapioca Balls with Pork Filling
-Green Papaya Salad
-Thai-Style Grilled Pork Skewers
-Pork Satay with Peanut Sauce
-Steamed Fish with Curry Paste
+'Baked Prawns With Vermicelli',
+ 'Banana  in coconut milk',
+ 'Chicken Green Curry',
+ 'Chicken Mussaman Curry',
+ 'Chicken Panang',
+ 'Coconut rice pancake',
+ 'Curried Noodle Soup with Chicken',
+ 'Deep fried spring roll',
+ 'Egg and Pork in Sweet Brown Sauce',
+ 'Egg custard in pumpkin',
+ 'Egg with Tamarind Sauce',
+ 'Fried Cabbage with Fish Sauce',
+ 'Fried Noodle in Soy Sauce',
+ 'Fried egg',
+ 'Fried fish-paste balls',
+ 'Fried noodle Thai style with prawns',
+ 'Fried rice',
+ 'Golden Egg Yolk Threads',
+ 'Green Papaya Salad',
+ 'Grilled River Prawn',
+ 'Mango Sticky Rice',
+ 'Omelet',
+ 'Pork Chopped Tofu Soup',
+ 'Pork Curry With Morning Glory',
+ 'Pork Satay with Peanut Sauce',
+ 'River prawn spicy soup',
+ 'Shrimp Fried Rice',
+ 'Shrimp Paste Fried Rice',
+ 'Sour Soup',
+ 'Spicy Glass Noodle Salad',
+ 'Spicy Mixed Vegetable Soup',
+ 'Spicy minced pork salad',
+ 'Steamed Fish with Curry paste',
+ 'Steamed capon in flavored rice',
+ 'Stir Fried Chicken with Chestnuts',
+ 'Stir Fried Clams with Roasted Chili Paste',
+ 'Stir Fried Rice Noodles with Chicken',
+ 'Stir fried Thai basil with minced pork',
+ 'Stir-Fried Chinese Morning Glory',
+ 'Stir-Fried Eggplant with Soybean Paste Sauce',
+ 'Stir-fried Pumpkin with Eggs',
+ 'Stuffed Bitter Gourd Broth',
+ 'Tapioca Balls with Pork Filling',
+ 'Thai Chicken Biryani',
+ 'Thai Chicken Coconut Soup',
+ 'Thai Pork Leg Stew',
+ 'Thai Wing Beans Salad',
+ 'Thai-Style Grilled Pork Skewers'
