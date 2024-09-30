@@ -121,25 +121,42 @@ elif app_mode == "About Project":
 # Prediction Page
 elif app_mode == "Prediction":
     st.header("Model Prediction")
+    
     test_image = st.file_uploader("Choose an Image:")
+    
     if test_image is not None:
+        st.session_state.test_image = test_image  # Store image in session state
+        
+        # Show image button
+        if "show_image" not in st.session_state:
+            st.session_state.show_image = False
+        
         if st.button("Show Image"):
+            st.session_state.show_image = True
+
+        # Display the uploaded image
+        if st.session_state.show_image:
             st.image(test_image, width=400, use_column_width=True)
+
         # Predict button
         if st.button("Predict"):
-            st.snow()
+            st.snow()  # Fun visual effect
             result_index = model_prediction(test_image, model)
+            
             # Reading Labels
             with open("labels.txt") as f:
                 content = f.readlines()
             label = [i.strip() for i in content]
-            st.success("Model is predicting it's a {}".format(label[result_index]))
-            st.session_state.prediction_result = label[result_index]
-            st.session_state.test_image = test_image
+            
+            st.success(f"Model is predicting it's a {label[result_index]}")
+            
+            st.session_state.prediction_result = label[result_index]  # Store the prediction result
+            st.session_state.test_image = test_image  # Store the image for calorie calculation page
 
 # Calorie Calculation Page
 elif app_mode == "Calorie Calculation":
     st.header("Calorie Calculation")
+    
     if 'prediction_result' in st.session_state and 'test_image' in st.session_state:
         st.image(st.session_state.test_image, width=400, use_column_width=True)
         st.write(f"Predicted Food Item: {st.session_state.prediction_result}")
